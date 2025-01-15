@@ -28,7 +28,7 @@ def contain_value(line):
     return re.search(pattern, line)
 
 
-with pdfplumber.open("Data/TestStatement.pdf") as pdf:
+with pdfplumber.open("Data/PDF/TestStatement.pdf") as pdf:
     data = []
 
     for page in pdf.pages:
