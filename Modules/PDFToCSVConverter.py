@@ -27,7 +27,7 @@ def contain_value(line):
     pattern = '\d+\.\d{2}'
     return re.search(pattern, line)
 
-
+# Main workflow
 with pdfplumber.open("Data/PDF/TestStatement.pdf") as pdf:
     data = []
 
